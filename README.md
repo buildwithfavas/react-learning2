@@ -22,3 +22,7 @@
 - The set function is asynchronus that obtained fron useState(), so pass inside value as arrow function for expected behaviour.
 31. More about State
 - pass functions name only in useState so that to avoid calling of the initial value function again and again.
+32. Objects & State
+
+
+
