@@ -2,6 +2,13 @@ import { useState } from "react";
 
 export default function LudoGame(){
     let [moves, setMoves] = useState({blue:0, yellow:0, green:0, red:0});
+    let [color, setColor] = useState(["no Color"]);
+
+    let updateArray = ()=>{
+        setColor((preColor)=>{
+            return [...preColor, "colorAdded"];
+        });
+    };
 
     let updateBlue = ()=>{
         //console.log(`moves.blue = ${moves.blue}`);
@@ -32,6 +39,8 @@ export default function LudoGame(){
         <div>
             <p>Game begins!</p>
             <div className="board">
+                <p>Array demo: {color}</p>
+                <button style={{backgroundColor:"gray", width:"100px",height:"40px"}} onClick={updateArray}>Add in Array</button>
                 <p>Blue moves = {moves.blue}</p>
                 <button style={{backgroundColor:"blue", width:"100px",height:"40px"}} onClick={updateBlue}>+1</button>
                 <p>Yellow moves = {moves.yellow}</p>
