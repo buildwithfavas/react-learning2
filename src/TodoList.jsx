@@ -31,7 +31,7 @@ export default function TodoList() {
   let allDone = () => {
     setTodos((prevTodos) =>
       prevTodos.map((todo) => {
-        return { ...todo, isDone: true};
+        return { ...todo, isDone: true };
       })
     );
   };

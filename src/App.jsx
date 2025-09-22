@@ -6,8 +6,20 @@ import Counter from "./Counter.jsx";
 import LikeButton from "./likeButton.jsx";
 import LudoGame from "./LudoGame.jsx";
 import TodoList from "./TodoList.jsx";
+import Lottery from "./Lottery.jsx";
+import { sum } from "./helper";
 
 function App() {
+  // for sum=15 lucky draw
+  let winCondition = (ticket) => {
+    return sum(ticket) === 15;
+  };
+
+  // For equal numbers lucky draw
+  // let winCondition = (ticket) => {
+  //   return ticket.every((num) => num === ticket[0]);
+  // };
+
   return (
     <>
       <h4>Excercise 1 : Amazon Card </h4>
@@ -28,6 +40,9 @@ function App() {
       <hr></hr>
       <h4>Excercise 5 : TodoList </h4>
       <TodoList />
+      <hr></hr>
+      <h4>Excercise 6 : Lottery Game </h4>
+      <Lottery n={3} winCondition={winCondition} />
     </>
   );
 }

@@ -35,10 +35,9 @@
 38. Update One in Array
 39. Add a Mark as Done Feature to Todo
 40. Todo Solution - Mark as Done Feature
-41. 
-42. 
-43. 
-44. 
-45. 
-
+41. Lottery Game
+42. Component Types: (logical component(smart, have state), presentational component(dump, no state))
+43. Ticket Component
+44. Lottery Component
+45. Functions as Props
 
